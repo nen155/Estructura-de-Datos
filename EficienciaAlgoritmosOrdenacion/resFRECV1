@@ -1,0 +1,46 @@
+Number of observations			 = 40
+Mean of independent variable		 = 1960
+Mean of dependent variable		 = 0.0955
+Standard dev. of ind. variable		 = 1169.045
+Standard dev. of dep. variable		 = 0.08667505
+Correlation coefficient			 = 0.9679244
+Regression coefficient (SLOPE)		 = 7.17636e-05
+Standard error of coefficient		 = 3.021778e-06
+t - value for coefficient		 = 23.7488
+Regression constant (INTERCEPT)		 = -0.04515666
+Standard error of constant		 = 0.006873533
+t - value for constant			 = -6.569643
+
+Analysis of variance
+Source		 d.f	 Sum of squares	 Mean Square	 F
+Regression	   1	0.2744958	0.2744958	564.0053
+Residual	   38	0.01849422	0.00048669
+Total		   39	0.29299
+
+
+y = -0.045157 + 7.1764e-05 * x
+
+Regression of set 0 results to set 1
+SSerr =       0.000825736
+
+Variable order:
+    0    1    2 
+Vector Beta      : 
+ 0: -0.000869 
+ 1: 2.572e-06 
+ 2: 1.765e-08 
+Vector d         : 
+ 0: 40 
+ 1: 5.33e+07 
+ 2: 5.671e+13 
+rbar matrix:
+          1960    5.1741e+06
+                        3920
+Vector thetab    : 
+ 0: 0.0955 
+ 1: 7.176e-05 
+ 2: 1.765e-08 
+
+y = -0.00086895 + 2.5723e-06 * x + 1.7651e-08 * x^2
+
+Regression of set 0 results to set 2

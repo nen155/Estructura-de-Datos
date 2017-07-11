@@ -1,0 +1,46 @@
+SSerr =       2.29347e-07
+
+Variable order:
+    0    1    2 
+Vector Beta      : 
+ 0: 1.171e-05 
+ 1: 1.72e-08 
+ 2: 2.247e-14 
+Vector d         : 
+ 0: 100 
+ 1: 8.332e+10 
+ 2: 5.553e+19 
+rbar matrix:
+         49510   3.28449e+09
+                       99020
+Vector thetab    : 
+ 0: 0.000937 
+ 1: 1.942e-08 
+ 2: 2.247e-14 
+
+y = 1.1712e-05 + 1.7198e-08 * x + 2.2473e-14 * x^2
+
+Regression of set 0 results to set 1
+Number of observations			 = 100
+Mean of independent variable		 = 49510
+Mean of dependent variable		 = 0.000937
+Standard dev. of ind. variable		 = 29011.49
+Standard dev. of dep. variable		 = 0.0005658024
+Correlation coefficient			 = 0.995931
+Regression coefficient (SLOPE)		 = 1.942334e-08
+Standard error of coefficient		 = 1.775401e-10
+t - value for coefficient		 = 109.4026
+Regression constant (INTERCEPT)		 = -2.464968e-05
+Standard error of constant		 = 1.017491e-05
+t - value for constant			 = -2.422595
+
+Analysis of variance
+Source		 d.f	 Sum of squares	 Mean Square	 F
+Regression	   1	3.143571e-05	3.143571e-05	11968.92
+Residual	   98	2.573916e-07	2.626445e-09
+Total		   99	3.16931e-05
+
+
+y = -2.465e-05 + 1.9423e-08 * x
+
+Regression of set 0 results to set 2

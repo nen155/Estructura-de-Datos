@@ -1,0 +1,12 @@
+Da la solucion de la practica actual, hay que llevar esta practica a template.
+FIchero pdf con la practica explicada y un fichero zip con la documentacion.
+Redactar en un fichero los fallos y problemas que hemos tenido, y corregir los
+fallos de nuestra practica.
+Lo primero que hay entregar es la correccion de los errores de nuestra practica
+Este domingo.
+La segunda parte es modificarla para usar diccionarios.
+Para ello tendremos diferentes archivos y el uso esta en principal.cpp para
+probarla.
+Hay que hacer dos instancias. Una para string y list<string>
+Y otra con el numero de meteoritos han caido.
+En total hay que entregarla al domingo 16 de noviembre.

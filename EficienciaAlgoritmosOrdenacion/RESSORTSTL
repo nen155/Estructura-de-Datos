@@ -1,0 +1,23 @@
+SSerr =       2.37892e-05
+
+Variable order:
+    0    1    2 
+Vector Beta      : 
+ 0: -0.0002719 
+ 1: 1.314e-06 
+ 2: -1.45e-10 
+Vector d         : 
+ 0: 40 
+ 1: 5.33e+07 
+ 2: 5.671e+13 
+rbar matrix:
+          1960    5.1741e+06
+                        3920
+Vector thetab    : 
+ 0: 0.001553 
+ 1: 7.454e-07 
+ 2: -1.45e-10 
+
+y = -0.00027186 + 1.3139e-06 * x - 1.4502e-10 * x^2
+
+Regression of set 0 results to set 1

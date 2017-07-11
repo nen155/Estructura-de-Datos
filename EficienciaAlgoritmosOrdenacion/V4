@@ -1,0 +1,23 @@
+Number of observations			 = 40
+Mean of independent variable		 = 1950
+Mean of dependent variable		 = 0.007229453
+Standard dev. of ind. variable		 = 1169.045
+Standard dev. of dep. variable		 = 0.004409988
+Correlation coefficient			 = 0.9993985
+Regression coefficient (SLOPE)		 = 3.77003e-06
+Standard error of coefficient		 = 2.1221e-08
+t - value for coefficient		 = 177.6556
+Regression constant (INTERCEPT)		 = -0.0001221057
+Standard error of constant		 = 4.808793e-05
+t - value for constant			 = -2.539218
+
+Analysis of variance
+Source		 d.f	 Sum of squares	 Mean Square	 F
+Regression	   1	0.0007575598	0.0007575598	31561.52
+Residual	   38	9.121002e-07	2.400264e-08
+Total		   39	0.0007584719
+
+
+y = -0.00012211 + 3.77e-06 * x
+
+Regression of set 0 results to set 1

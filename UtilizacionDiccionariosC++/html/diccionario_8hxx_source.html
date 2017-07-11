@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>METEORITOS-V0: Fichero Fuente diccionario.hxx</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">METEORITOS-V0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">diccionario.hxx</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * diccionario.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright  (C) Juan F. Huete</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * diccionario:: diccionario, end, find, operator[], size, max_element</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * tipos diccionario::entrada, diccionario::size_type</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">===================================================================================</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">Funcion de Abstraccion:</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  @todo incluir funcion de abstracción </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">=====================================================================================</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">Invariante de la Representación:</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">  @todo incluir invariante dela representación </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">=====================================================================================</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classdiccionario.html#a60c722b06ff7e050bae71601f74d7549">   25</a></span>&#160;<a class="code" href="classdiccionario.html#a60c722b06ff7e050bae71601f74d7549">diccionario::diccionario</a>(){ </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classdiccionario.html#a19558e1ad869a8791741b1359c87d80b">   32</a></span>&#160;<a class="code" href="classdiccionario.html#a60c722b06ff7e050bae71601f74d7549">diccionario::diccionario</a> (<span class="keyword">const</span> <a class="code" href="classdiccionario.html">diccionario</a> &amp; d){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classdiccionario.html#a5ce69ac88959ca76c60fe0875690320f">   40</a></span>&#160;pair&lt;diccionario::entrada,bool&gt; &amp; <a class="code" href="classdiccionario.html#a5ce69ac88959ca76c60fe0875690320f">diccionario::find</a>( <span class="keyword">const</span> <a class="code" href="classdefM.html">defM</a> &amp; s)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classdiccionario.html#a8b2ac04f691e925d86967bbd62670a4d">   47</a></span>&#160;<a class="code" href="classdefM.html">defM</a> &amp; <a class="code" href="classdiccionario.html#a8b2ac04f691e925d86967bbd62670a4d">diccionario::operator[]</a>(<span class="keyword">const</span> nombreM &amp; s) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classdiccionario.html#a1dbf7b521d4ac17e0bcd5d3e5ecff93d">   55</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classdefM.html">defM</a> &amp; <a class="code" href="classdiccionario.html#a8b2ac04f691e925d86967bbd62670a4d">diccionario::operator[]</a>(<span class="keyword">const</span> nombreM &amp; s)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classdiccionario.html#abda03cfdf5848a07b2d93ebdc1238d27">   63</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classdiccionario.html#abda03cfdf5848a07b2d93ebdc1238d27">diccionario::insert</a>(<span class="keyword">const</span> diccionario::entrada &amp; e)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classdiccionario.html#af34ed220d3e0faa56cbe713b97766f02">   70</a></span>&#160;<a class="code" href="classdiccionario.html">diccionario</a> &amp; <a class="code" href="classdiccionario.html#af34ed220d3e0faa56cbe713b97766f02">diccionario::operator=</a>( <span class="keyword">const</span> <a class="code" href="classdiccionario.html">diccionario</a> &amp; org){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classdiccionario.html#a441fdeeb87c717757f5f7ff50612d57e">   78</a></span>&#160;diccionario::size_type <a class="code" href="classdiccionario.html#a441fdeeb87c717757f5f7ff50612d57e">diccionario::size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classdiccionario.html#a8df27c218ef713041e09c9f799a1e9e6">   85</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classdiccionario.html#a8df27c218ef713041e09c9f799a1e9e6">diccionario::empty</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;   </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;         </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classdiccionario.html#a0af2e538b04d23e6b42e63060c1cf002">   93</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classdiccionario.html#a0af2e538b04d23e6b42e63060c1cf002">diccionario::cheq_rep</a>( )<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classdiccionario.html#a516e0071b7e529b4d37892ffb12247ef">  100</a></span>&#160;ostream &amp;  operator &lt;&lt; ( ostream &amp; sal, <span class="keyword">const</span> <a class="code" href="classdiccionario.html">diccionario</a> &amp; D){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="ttc" id="classdiccionario_html_af34ed220d3e0faa56cbe713b97766f02"><div class="ttname"><a href="classdiccionario.html#af34ed220d3e0faa56cbe713b97766f02">diccionario::operator=</a></div><div class="ttdeci">diccionario &amp; operator=(const diccionario &amp;org)</div><div class="ttdoc">operador de asignación </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:70</div></div>
+<div class="ttc" id="classdiccionario_html"><div class="ttname"><a href="classdiccionario.html">diccionario</a></div><div class="ttdoc">Clase diccionario. </div><div class="ttdef"><b>Definition:</b> diccionario.h:35</div></div>
+<div class="ttc" id="classdiccionario_html_a8df27c218ef713041e09c9f799a1e9e6"><div class="ttname"><a href="classdiccionario.html#a8df27c218ef713041e09c9f799a1e9e6">diccionario::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdoc">vacia Chequea si el diccionario esta vacio (size()==0) </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:85</div></div>
+<div class="ttc" id="classdefM_html"><div class="ttname"><a href="classdefM.html">defM</a></div><div class="ttdef"><b>Definition:</b> meteorito.h:27</div></div>
+<div class="ttc" id="classdiccionario_html_a8b2ac04f691e925d86967bbd62670a4d"><div class="ttname"><a href="classdiccionario.html#a8b2ac04f691e925d86967bbd62670a4d">diccionario::operator[]</a></div><div class="ttdeci">defM &amp; operator[](const nombreM &amp;s)</div><div class="ttdoc">Consulta/Inserta una entrada en el diccionario. </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:47</div></div>
+<div class="ttc" id="classdiccionario_html_a0af2e538b04d23e6b42e63060c1cf002"><div class="ttname"><a href="classdiccionario.html#a0af2e538b04d23e6b42e63060c1cf002">diccionario::cheq_rep</a></div><div class="ttdeci">bool cheq_rep() const </div><div class="ttdoc">Chequea el Invariante de la representacion. </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:93</div></div>
+<div class="ttc" id="classdiccionario_html_abda03cfdf5848a07b2d93ebdc1238d27"><div class="ttname"><a href="classdiccionario.html#abda03cfdf5848a07b2d93ebdc1238d27">diccionario::insert</a></div><div class="ttdeci">bool insert(const entrada &amp;e)</div><div class="ttdoc">Inserta una entrada en el diccionario. </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:63</div></div>
+<div class="ttc" id="classdiccionario_html_a441fdeeb87c717757f5f7ff50612d57e"><div class="ttname"><a href="classdiccionario.html#a441fdeeb87c717757f5f7ff50612d57e">diccionario::size</a></div><div class="ttdeci">size_type size() const </div><div class="ttdoc">numero de entradas en el diccionario </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:78</div></div>
+<div class="ttc" id="classdiccionario_html_a5ce69ac88959ca76c60fe0875690320f"><div class="ttname"><a href="classdiccionario.html#a5ce69ac88959ca76c60fe0875690320f">diccionario::find</a></div><div class="ttdeci">pair&lt; entrada, bool &gt; find(const nombreM &amp;s) const </div><div class="ttdoc">busca una meteorito en el diccionario </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:40</div></div>
+<div class="ttc" id="classdiccionario_html_a60c722b06ff7e050bae71601f74d7549"><div class="ttname"><a href="classdiccionario.html#a60c722b06ff7e050bae71601f74d7549">diccionario::diccionario</a></div><div class="ttdeci">diccionario()</div><div class="ttdoc">constructor primitivo. </div><div class="ttdef"><b>Definition:</b> diccionario.hxx:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 3 de Noviembre de 2014 23:03:25 para METEORITOS-V0 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
